@@ -133,12 +133,10 @@ input[type="checkbox"] + span {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  position: relative;
 }
 
 input[type="checkbox"]:checked + span::after {
   content: "";
-  position: absolute;
   width: 17px;
   height: 17px;
   border: 1px solid #1b1919;
