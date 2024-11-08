@@ -133,9 +133,12 @@ input[type="checkbox"] + span {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
+  position: relative;
 }
 
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
   width: 17px;
   height: 17px;
   border: 1px solid #1b1919;
@@ -208,6 +211,10 @@ input[type="checkbox"]:checked + span {
   text-decoration: none;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
 .content__video-card-description-container {
   max-width: 198px;
 }
@@ -231,7 +238,6 @@ input[type="checkbox"]:checked + span {
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
