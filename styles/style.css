@@ -237,7 +237,8 @@ input[type="checkbox"]:checked + span::after {
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
-  white-space: nowrap;
+  white-space: normal; /* Позволяет перенос строк */
+  overflow: hidden;
 }
 
 .content__video-card {
