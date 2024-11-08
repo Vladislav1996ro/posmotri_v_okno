@@ -141,6 +141,7 @@ input[type="checkbox"]:checked + span::after {
   height: 17px;
   border: 1px solid #1b1919;
   background-color: #fff;
+  display: inline-block;
   box-shadow: 0px 0px 1px 1px #fff;
 }
 
@@ -237,7 +238,6 @@ input[type="checkbox"]:checked + span::after {
   font-weight: 400;
   line-height: 16.2px;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .content__video-card {
